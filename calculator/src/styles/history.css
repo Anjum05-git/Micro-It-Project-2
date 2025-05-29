@@ -1,0 +1,90 @@
+/* History Panel Styles */
+
+.history-panel {
+  width: 100%;
+  max-width: 360px;
+  background-color: var(--history-bg);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: box-shadow var(--transition-speed) var(--transition-timing),
+              background-color var(--transition-speed) var(--transition-timing);
+  margin: var(--spacing-xl) auto 0;
+  min-height: 300px;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.history-header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.history-clear-button {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-speed) var(--transition-timing);
+}
+
+.history-clear-button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.history-list {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: var(--spacing-sm) 0;
+}
+
+.history-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: var(--text-color-muted);
+  font-size: 0.875rem;
+}
+
+.history-item {
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) var(--transition-timing);
+  border-left: 3px solid transparent;
+}
+
+.history-item:hover {
+  background-color: var(--button-hover-bg);
+  border-left-color: var(--accent-color);
+}
+
+.history-equation {
+  font-size: 0.875rem;
+  color: var(--text-color-muted);
+  margin-bottom: var(--spacing-xs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-result {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

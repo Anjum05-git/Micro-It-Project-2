@@ -1,0 +1,85 @@
+/* Animation Styles */
+
+/* Calculator Button Press Animation */
+.calculator-button-pressed {
+  transform: scale(0.95);
+}
+
+/* Display Update Animation */
+.update-animation {
+  animation: update-fade 0.15s ease-out;
+}
+
+@keyframes update-fade {
+  0% {
+    opacity: 0.8;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Theme Toggle Animation */
+.theme-toggle-animation {
+  animation: rotate-toggle 0.3s ease-out;
+}
+
+@keyframes rotate-toggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* History Item Selection Animation */
+.history-item-selected {
+  animation: history-select 0.3s ease;
+}
+
+@keyframes history-select {
+  0% {
+    background-color: var(--accent-color-light);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* History Clear Animation */
+.history-clear-animation {
+  animation: history-clear 0.3s ease;
+}
+
+@keyframes history-clear {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* App Load Animation */
+.app-layout {
+  animation: fade-in 0.5s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Calculator Hover Animation */
+.calculator:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.08);
+}

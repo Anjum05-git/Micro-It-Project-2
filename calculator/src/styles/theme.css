@@ -1,0 +1,106 @@
+/* Theme Styles */
+
+/* Light Theme */
+:root, [data-theme="light"] {
+  /* Colors */
+  --primary-color: #6C63FF;
+  --primary-color-dark: #5A52E3;
+  --primary-color-light: #8A84FF;
+  
+  --secondary-color: #8E8E93;
+  --secondary-color-dark: #636366;
+  --secondary-color-light: #AEAEB2;
+  
+  --accent-color: #FF6B6B;
+  --accent-color-dark: #FF4F4F;
+  --accent-color-light: #FF8787;
+  
+  --success-color: #34C759;
+  --warning-color: #FFCC00;
+  --error-color: #FF3B30;
+  
+  /* Background colors */
+  --background-color: #F4F4F7;
+  --surface-color: #FFFFFF;
+  --calculator-bg: rgba(255, 255, 255, 0.85);
+  --display-bg: rgba(255, 255, 255, 0.75);
+  --history-bg: rgba(255, 255, 255, 0.85);
+  
+  /* Button colors */
+  --button-number-bg: rgba(255, 255, 255, 0.9);
+  --button-number-text: #333333;
+  --button-operator-bg: #FF6B6B;
+  --button-operator-text: #FFFFFF;
+  --button-function-bg: rgba(108, 99, 255, 0.15);
+  --button-function-text: #6C63FF;
+  --button-hover-bg: rgba(0, 0, 0, 0.05);
+  
+  /* Text colors */
+  --text-color: #333333;
+  --text-color-muted: #8E8E93;
+  
+  /* Border colors */
+  --border-color: rgba(0, 0, 0, 0.1);
+  
+  /* Shadow colors */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Colors */
+  --primary-color: #8A84FF;
+  --primary-color-dark: #6C63FF;
+  --primary-color-light: #A8A3FF;
+  
+  /* Background colors */
+  --background-color: #121212;
+  --surface-color: #1E1E1E;
+  --calculator-bg: rgba(30, 30, 30, 0.85);
+  --display-bg: rgba(25, 25, 25, 0.75);
+  --history-bg: rgba(30, 30, 30, 0.85);
+  
+  /* Button colors */
+  --button-number-bg: rgba(255, 255, 255, 0.1);
+  --button-number-text: #FFFFFF;
+  --button-operator-bg: #FF8787;
+  --button-operator-text: #FFFFFF;
+  --button-function-bg: rgba(138, 132, 255, 0.15);
+  --button-function-text: #8A84FF;
+  --button-hover-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Text colors */
+  --text-color: #FFFFFF;
+  --text-color-muted: #98989D;
+  
+  /* Border colors */
+  --border-color: rgba(255, 255, 255, 0.1);
+  
+  /* Shadow colors */
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background-color var(--transition-speed) var(--transition-timing),
+              transform var(--transition-speed) var(--transition-timing);
+}
+
+.theme-toggle:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.theme-toggle svg {
+  width: 24px;
+  height: 24px;
+}
